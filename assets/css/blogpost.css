@@ -320,48 +320,48 @@ section h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.post-title {
+.blog-post h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.post-meta {
+.blog-post span {
   font-size: 0.9rem;
   color: #999;
   margin-bottom: 1.5rem;
 }
 
-.post-featured {
+.blog-post img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 
 /* Post content */
-.post-content h2 {
+.blog-post h2 {
   font-size: 1.5rem;
   margin: 1.5rem 0 0.5rem 0;
   color: white;
 }
 
-.post-content p {
+.blog-post p {
   margin-bottom: 1rem;
   font-size: 0.95rem;
 }
 
 /* Tags */
-.post-tags {
+.blog-post {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
 
-.post-tags a {
+.blog-post a {
   color: #007BFF;
   text-decoration: none;
   margin-right: 0.5rem;
 }
 
-.post-tags a:hover {
+.blog-post a:hover {
   text-decoration: underline;
 }
 
