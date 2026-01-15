@@ -366,7 +366,7 @@ section h2 {
 .post-author-container {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 1rem;
   height: auto;
   overflow-x: hidden;
 }
