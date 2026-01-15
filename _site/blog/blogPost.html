@@ -1,11 +1,9 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="../assets/css/blog.css"> <!-- link to your CSS -->
+
     <title>Phoenix Ocean | Security & Programming</title>
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown.min.css"
@@ -22,7 +20,7 @@
 </head>
 <body>
 
-  <!-- ================= hello? ================= -->
+  <!-- ================= hrer? ================= -->
   <nav>
     <div class="nav-content">
         <div class="nav-left">
@@ -37,7 +35,7 @@
     
         <ul class="nav-right">
           <li><a href="https://phoenixocean.live">home</a></li>
-          <li><a href="https://phoenixocean.live/blog/">blog</a></li>
+          <li><a href="https://phoenixocean.live/blog/home">blog</a></li>
           <li><a href="https://phoenixocean.live/#work-experience">work-experience</a></li>
           <li><a href="https://phoenixocean.live/#personal-projects">projects</a></li>
           <li><a href="https://phoenixocean.live/#certificates">certificates</a></li>
@@ -51,8 +49,10 @@
   <main>
     <!-- BLOG -->
     <section id="blog">
-        <!-- Markdown content will be dynamically loaded here -->
-        {{ content }}
+        <article class="blog-post markdown-body" id="post">
+            <!-- Markdown content will be dynamically loaded here -->
+            {{ content }}
+        </article>
     </section>
 
     <!-- CONTACT SECTION -->
@@ -110,4 +110,3 @@
   </main>
 </body>
 </html>
-

@@ -3,13 +3,28 @@ layout: blogtemp
 title: Blog
 ---
 
-<h1>Blog</h1>
+<div class="post-author-container">
+  <img id="author-photo" src="../assets/imgs/phoenixoceanlogominimal.png" alt="Mythical Phoenix With Fire and Water Elements">
+  <div class="author-sub-container">
+    <h1 id="author-name">Phoenix Ocean</h1>
+    <p id="author-desc">I’m a tech enthusiast and software explorer with a passion for cybersecurity and digital privacy. I dive into ways to stay safe online, protect your data, and avoid unwanted government surveillance—all while exploring the latest in tech and software.</p>
+  </div>
+</div>
 
-<ul>
+<h1 id="blog-title">Blog</h1>
 {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    — {{ post.date | date: "%Y-%m-%d" }}
-  </li>
+  <article class="blog-post markdown-body" id="post">
+    <!-- Markdown content will be dynamically loaded here -->
+    <div class="post-card">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="post-card-author-container">
+      <h2 id="post-card-author">
+        {{ post.author }} — {{ post.date | date: "%Y-%m-%d" }}
+      </h2>
+    </div>
+    <div class="post-card-desc">
+      <p>{{ post.description }}</p>
+    </div>
+  </article>
 {% endfor %}
-</ul>
