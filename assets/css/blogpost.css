@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  color: #e0e0e0;
+  color: #f1f1f1;
   font-family: monospace;
   line-height: 1.6;
 }
@@ -387,7 +387,7 @@ section h2 {
 }
 
 #author-desc {
-  color: rgb(255, 106, 80);
+  color: rgb(0, 178, 223);
   padding-right: 0.3rem;
 }
 
