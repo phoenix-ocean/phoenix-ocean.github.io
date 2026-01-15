@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogtemp
 title: "ai"
 date: 2026-01-14
 description: "AI cameras are everywhere"
