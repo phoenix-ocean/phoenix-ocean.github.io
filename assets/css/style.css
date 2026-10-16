@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #FFE5FC;
+  --main-padding: 15px;
+  --font-stack: 'Helvetica', sans-serif;
+}
+
 a {
   color: inherit;          /* Removes the blue/purple and uses the parent text color */
   text-decoration: none;   /* Removes the underline */
@@ -64,7 +70,7 @@ nav {
 }
 
 .logo {
-  color: #50ff50;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
@@ -89,14 +95,14 @@ nav {
 }
 
 .nav-right a:hover {
-  color: #50ff50;
+  color: var(--primary-color);
 }
 
 /* NAV LIST ELEMENTS UNDERLINE UPON HOVER */
 .nav-right li a {
   position: relative;      /* needed for pseudo-element */
   text-decoration: none;
-  color: #50FF50;
+  color: var(--primary-color);
   font-weight: 500;
   padding-bottom: 4px;     /* space for the line */
   transition: width 0.3s ease, text-shadow 0.3s ease;
@@ -110,7 +116,7 @@ nav {
   bottom: 0;
   width: 0%;               /* start with no underline */
   height: 2px;             /* line thickness */
-  background-color: #50FF50;
+  background-color: var(--primary-color);
   transition: width 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -118,7 +124,7 @@ nav {
 .nav-right li a:hover,
 .nav-right li a:focus,
 .nav-right li a.active {
-  text-shadow: 0 0 4px #50FF50, 0 0 8px #50FF50; /* subtle glow */
+  text-shadow: 0 0 4px var(--primary-color), 0 0 8px var(--primary-color); /* subtle glow */
 }
 
 /* hover/focus/active states */
@@ -131,7 +137,7 @@ nav {
 #navbar-divider {
   height: 2px;
   width: 100%;
-  background: #50FF50;
+  background: var(--primary-color);
 }
 
 /* Menu Button For Small Screens */
@@ -140,7 +146,7 @@ nav {
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: #50FF50;
+  color: var(--primary-color);
   cursor: pointer;
   width: 60px;
   height: 40px;
@@ -151,7 +157,7 @@ nav {
 .menu-toggle .bar {
   width: 60px;
   height: 4px;
-  background-color: #50FF50; /* Match your text color */
+  background-color: var(--primary-color); /* Match your text color */
   border-radius: 4px;
 
   /* 'all' covers transform, opacity, and background-color */
@@ -175,7 +181,7 @@ nav {
     background: #0c0c0c;
     padding: 15px; /* Reset padding to 0 so it collapses perfectly */
     text-align: center;
-    border-bottom: #50FF50;
+    border-bottom: var(--primary-color);
     z-index: 1000;
     gap: 20px;
 
@@ -268,7 +274,7 @@ nav {
 .hero-title {
   text-align: left;
   font-size: 3rem;
-  color: #50ff50;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -294,8 +300,8 @@ nav {
 }
 
 .btn.primary {
-  border: 2px solid #50ff50;
-  color: #50ff50;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
   padding: 12px 24px;
   border-radius: 6px;
   font-size: 1rem;
@@ -305,7 +311,7 @@ nav {
 }
 
 .btn.primary:hover {
-  background-color: #50ff50;
+  background-color: var(--primary-color);
   color: black;
 }
 
@@ -331,7 +337,7 @@ nav {
   background: linear-gradient(
     90deg,
     #0b0b2a,
-    #50FF50,
+    var(--primary-color),
     #0b0b2a
   );
   box-shadow:
@@ -396,7 +402,7 @@ section {
 }
 
 section h2 {
-  color: #50ff50;
+  color: var(--primary-color);
   font-size: 1.2rem;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(80, 255, 80, 0.25);
@@ -468,7 +474,7 @@ section h2 {
   margin: 5px 0 5px 0;
   min-height: 50px;
   font-size: 1.2em;
-  color: #50ff50;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -507,7 +513,7 @@ section h2 {
     bottom: 0;
     width: 0%;               /* start with no underline */
     height: 2px;             /* line thickness */
-    background-color: #50FF50;
+    background-color: var(--primary-color);
     transition: width 0.3s ease, text-shadow 0.3s ease;
   }
   
@@ -515,7 +521,7 @@ section h2 {
   .cert-verify-link:hover,
   .cert-verify-link:focus,
   .cert-verify-link.active {
-    text-shadow: 0 0 4px #50FF50, 0 0 8px #50FF50; /* subtle glow */
+    text-shadow: 0 0 4px var(--primary-color), 0 0 8px var(--primary-color); /* subtle glow */
   }
   
   /* hover/focus/active states */
@@ -547,7 +553,7 @@ section h2 {
 
 .card:hover {
   transform: translateY(-6px);
-  border-color: #50FF50;
+  border-color: var(--primary-color);
   box-shadow: 0 10px 30px rgba(80, 255, 80, 0.15);
 }
 
@@ -575,13 +581,13 @@ section h2 {
   padding: 0.25rem 0.5rem;
   border: 1px solid rgba(80, 255, 80, 0.3);
   border-radius: 999px;
-  color: #50FF50;
+  color: var(--primary-color);
 }
 
 .card-link {
   display: inline-block;
   margin-top: 1rem;
-  color: #50FF50;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -605,7 +611,7 @@ section h2 {
 
 .skills-grid li::before {
   content: "> ";
-  color: #50ff50;
+  color: var(--primary-color);
 }
 
 .skills-title {
@@ -686,7 +692,7 @@ section h2 {
 .project-card:hover .card-inner {
   transform: scale(1.08) translateY(-6px);
   z-index: 10;
-  border-color: #50FF50;
+  border-color: var(--primary-color);
   box-shadow: 0 10px 30px rgba(80, 255, 80, 0.15);
 }
 
@@ -800,7 +806,7 @@ section h2 {
 
 .project-card-test:hover {
   transform: translateY(-8px);
-  border-color: #50FF50;
+  border-color: var(--primary-color);
   box-shadow: 0px 10px 25px rgba(80, 255, 80, 0.15);
 }
 /* HOVER ANNIMATIONS END */
@@ -820,7 +826,7 @@ section h2 {
 
 .project-tags-test span {
   background: rgba(80, 255, 80, 0.1);
-  color: #50FF50;
+  color: var(--primary-color);
   font-size: 0.75rem;
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
@@ -834,14 +840,14 @@ section h2 {
 }
 
 .project-links-test a {
-  color: #50FF50;
+  color: var(--primary-color);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
 
 .project-links-test a:hover {
-  border-color: #50FF50;
+  border-color: var(--primary-color);
 }
 
 .project-card-content-test > * {
@@ -882,29 +888,29 @@ section h2 {
 #contact span {
   display: block;
   margin-bottom: 5px;
-  color: #50ff50;
+  color: var(--primary-color);
 }
 
 #contact input,
 #contact textarea {
   width: 100%;
   background: #000;
-  border: 1px solid #50ff50;
-  color: #50ff50;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   padding: 8px;
   font-family: monospace;
 }
 
 #contact button {
   background: none;
-  border: 1px solid #50ff50;
-  color: #50ff50;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   padding: 8px 16px;
   cursor: pointer;
 }
 
 #contact button:hover {
-  background: #50ff50;
+  background: var(--primary-color);
   color: #000;
 }
 
@@ -920,7 +926,7 @@ section h2 {
 .contact-socials a {
   width: 36px;
   height: 36px;
-  color: #50ff50;
+  color: var(--primary-color);
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
@@ -1167,7 +1173,7 @@ html, body {
 
   /* Delays to make elements appear one after another */
   .cert-item.modal-active .modal-image { transition-delay: 0.1s; display: block; width: 240px; height: auto; margin-bottom: 20px;}
-  .cert-item.modal-active h3 { transition-delay: 0.2s; font-size: 1.5rem; color: #50ff50;}
+  .cert-item.modal-active h3 { transition-delay: 0.2s; font-size: 1.5rem; color: var(--primary-color);}
   .cert-item.modal-active p { transition-delay: 0.25s; }
   .cert-item.modal-active .cert-verify-link { transition-delay: 0.3s; font-size: 1.1rem; padding: 16px 10% 7% 10%; margin-top: 0;}
 
@@ -1185,7 +1191,7 @@ html, body {
 
   .cert-item.modal-active .cert-info::before {
     content: "Tap anywhere to close";
-    color: #50ff50;
+    color: var(--primary-color);
     font-size: 0.8rem;
     margin-bottom: 20px;
     opacity: 0.6;
@@ -1221,7 +1227,7 @@ html, body {
   /* Add a plus icon */
   .skills-title::after {
     content: '+';
-    color: #50ff50;
+    color: var(--primary-color);
     font-weight: bold;
     transition: transform 0.4s ease-in-out;
   }
